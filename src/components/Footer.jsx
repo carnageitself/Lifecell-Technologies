@@ -5,10 +5,11 @@ import { BsYoutube } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { BsFacebook } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="relative bg-[#EC5D82] min-h-[200px] text-white text-[15px] p-[20px] py-[50px] justify-between  m-auto flex flex-col md:flex-row items-center gap-[30px] md:items-start w-full ">
+    <div className="relative bg-[#101010] min-h-[200px] text-white text-[15px] p-[20px] py-[50px] justify-between  m-auto flex flex-col md:flex-row items-center gap-[30px] md:items-start w-full ">
       <div className=" flex flex-col items-center md:items-start gap-[5px]">
         <span className="logo">
           <img src={Img} className="w-12 h-12" alt="logo" />
@@ -24,10 +25,10 @@ const Footer = () => {
       </div>
       <div className="flex items-center md:items-end flex-col gap-[25px]">
         <div className="flex gap-[25px]">
-          <span className="cursor-pointer hover:opacity-80" >Partners</span>
-          <span className="cursor-pointer hover:opacity-80">Products</span>
-          <span className="cursor-pointer hover:opacity-80">About</span>
-          <span className="cursor-pointer hover:opacity-80">Contact</span>
+        <Link to="/"><span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl" >Partners</span></Link>
+        <Link to="/products"> <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">Products</span></Link>
+        <Link to="/about"> <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">About</span></Link>
+        <Link to="/contact"> <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">Contact</span></Link>
         </div>
         <div className="flex gap-[25px] justify-end items-center">
           <BsYoutube size={28}   className="cursor-pointer hover:opacity-80" />

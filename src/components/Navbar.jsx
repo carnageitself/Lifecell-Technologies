@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
 
     <>
-      <nav className="w-full md:w-full sm:w-full bg-[#C10A39] shadow">
+      <nav className="w-full md:w-full sm:w-full bg-[#101010] shadow">
         <div className="justify-between px-4 mx-auto md:w-full lg:max-w-8xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -61,57 +61,25 @@ const Navbar = () => {
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                 }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg uppercase">
-                <li className="text-white hover:text-indigo-200">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-base uppercase">
+                <li className="text-white hover:text-indigo-200 px-3 py-2 bg-[#202020] rounded-2xl">
                   <Link to="/">Home</Link>
                 </li>
-                <li className="text-white hover:text-indigo-200">
+                <li className="text-white hover:text-indigo-200  px-3 py-2 bg-[#202020] rounded-2xl">
                   <Link to="/products">Products</Link>
                 </li>
-                <li className="text-white hover:text-indigo-200">
-                  <Link to="/aboutus">About Us</Link>
+                <li className="text-white hover:text-indigo-200  px-3 py-2 bg-[#202020] rounded-2xl">
+                  <Link to="/aboutus">About</Link>
                 </li>
-                <li className="text-white hover:text-indigo-200">
-                  <Link to="/contactus">Contact Us</Link>
+                <li className="text-white hover:text-indigo-200  px-3 py-2 bg-[#202020] rounded-2xl">
+                  <Link to="/contactus">Contact</Link>
                 </li>
               </ul>
-
-              <div className="mt-3 space-y-2 lg:hidden md:inline-block">
-                    <Link
-                        href="/login"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
-                    >
-                        Sign In
-                    </Link>
-                    <Link
-                        href="/signup"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
-                    >
-                        Register
-                    </Link>
-                </div>
-
-
               {/* <div className="mt-3 space-y-2 lg:hidden md:inline-block border-white rounded-md " onClick={handleClick}>
                 <Hamburger size={22} color="white" />
               </div> */}
             </div>
           </div>
-          <div className="hidden space-x-2 md:inline-block">
-                    <Link
-                        href="/login"
-                        className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
-                    >
-                        Sign In
-                    </Link>
-                    <Link
-                        href="/signup"
-                        className="px-4 py-2 text-white bg-[#b90434] rounded-md shadow hover:bg-[#a3485f]"
-                    >
-                        Register
-                    </Link>
-                </div>
-  
         </div>
       </nav>
     </>
