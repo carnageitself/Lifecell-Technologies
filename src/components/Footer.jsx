@@ -24,10 +24,10 @@ const Footer = () => {
       </div>
       <div className="flex items-center md:items-end flex-col gap-[25px]">
         <div className="flex gap-[25px]">
-          <span className="cursor-pointer hover:opacity-80" >About</span>
-          <span className="cursor-pointer hover:opacity-80">Contacts</span>
-          <span className="cursor-pointer hover:opacity-80">Careers</span>
-          <span className="cursor-pointer hover:opacity-80">Coupons</span>
+          <span className="cursor-pointer hover:opacity-80" >Partners</span>
+          <span className="cursor-pointer hover:opacity-80">Products</span>
+          <span className="cursor-pointer hover:opacity-80">About</span>
+          <span className="cursor-pointer hover:opacity-80">Contact</span>
         </div>
         <div className="flex gap-[25px] justify-end items-center">
           <BsYoutube size={28}   className="cursor-pointer hover:opacity-80" />
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
       </div>
       <span className="text-center bottom-[10px] absolute left-0 right-0 mx-auto">
-        Privacy Policy Do not sell my personal info Terms of Service
+      Copyright 2023. All Rights Reserved.
       </span>
     </div>
   );

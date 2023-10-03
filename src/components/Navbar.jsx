@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Img from "../assets/react.svg";
 import { Divide as Hamburger } from "hamburger-react";
-import {FcMenu} from "react-icons/fc"
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -62,18 +61,18 @@ const Navbar = () => {
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                 }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg uppercase">
                 <li className="text-white hover:text-indigo-200">
-                  <Link href="/">Home</Link>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <Link href="/products">Products</Link>
+                  <Link to="/products">Products</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <Link href="/aboutus">About Us</Link>
+                  <Link to="/aboutus">About Us</Link>
                 </li>
                 <li className="text-white hover:text-indigo-200">
-                  <Link href="/contactus">Contact Us</Link>
+                  <Link to="/contactus">Contact Us</Link>
                 </li>
               </ul>
 
