@@ -15,30 +15,52 @@ const Footer = () => {
           <img src={Img} className="w-12 h-12" alt="logo" />
         </span>
         <p className="text-[15px] max-w-[350px]">
-          Address: orem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-          eu turpis molestie
+          Shendra, Aurangabad Head office-Mumbai
+          sales@lifecelltechnologies.co.in
         </p>
         <div className="flex gap-[10px] items-center text-[15px]">
-          <IoIosCall size={21}/>
-          <span>+91 9636941272</span>
+          <IoIosCall size={21} />
+          <span>+91 88288 25966</span>
         </div>
       </div>
       <div className="flex items-center md:items-end flex-col gap-[25px]">
         <div className="flex gap-[25px]">
-        <Link to="/"><span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl" >Partners</span></Link>
-        <Link to="/products"> <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">Products</span></Link>
-        <Link to="/about"> <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">About</span></Link>
-        <Link to="/contact"> <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">Contact</span></Link>
+          <Link to="/">
+            <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">
+              Partners
+            </span>
+          </Link>
+          <Link to="/products">
+            {" "}
+            <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">
+              Products
+            </span>
+          </Link>
+          <Link to="/about">
+            {" "}
+            <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">
+              About
+            </span>
+          </Link>
+          <Link to="/contact">
+            {" "}
+            <span className="cursor-pointer hover:opacity-80 bg-[#202020] px-3 py-2 rounded-2xl">
+              Contact
+            </span>
+          </Link>
         </div>
         <div className="flex gap-[25px] justify-end items-center">
-          <BsYoutube size={28}   className="cursor-pointer hover:opacity-80" />
-          <AiOutlineTwitter size={29} className="cursor-pointer hover:opacity-80"   />
-          <GrInstagram size={25}    className="cursor-pointer hover:opacity-80"  />
-          <BsFacebook size={25}       className="cursor-pointer hover:opacity-80"  />
+          <BsYoutube size={28} className="cursor-pointer hover:opacity-80" />
+          <AiOutlineTwitter
+            size={29}
+            className="cursor-pointer hover:opacity-80"
+          />
+          <GrInstagram size={25} className="cursor-pointer hover:opacity-80" />
+          <BsFacebook size={25} className="cursor-pointer hover:opacity-80" />
         </div>
       </div>
       <span className="text-center bottom-[10px] absolute left-0 right-0 mx-auto">
-      Copyright 2023. All Rights Reserved.
+        Copyright 2023. All Rights Reserved.
       </span>
     </div>
   );
