@@ -10,9 +10,9 @@ const Contact = () => {
 
   return (
     <div className='w-full h-full bg-gray-100'>
-      <div className="bg-gray-100 px-6 py-20 sm:py-32 lg:px-8">
+      <div className="bg-gray-100 px-6 py-28 sm:py-32 lg:px-8">
       <div
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        className="absolute inset-x-0 top-[-20rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
       >
         {/* <div
@@ -126,7 +126,7 @@ const Contact = () => {
             </div>
             <Switch.Label className="text-sm leading-6 text-gray-800">
               By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold text-blue-200 underline">
+              <a href="#" className="font-semibold text-blue-500 underline">
                 privacy&nbsp;policy
               </a>
               .
@@ -136,7 +136,7 @@ const Contact = () => {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-[#101010] px-3.5 py-2.5 text-center text-lg font-semibold text-gray-800 shadow-sm hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border border-gray-400"
+            className="block w-full rounded-md bg-blue-500 px-3.5 py-2.5 text-center text-lg font-semibold text-gray-800 shadow-sm hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border border-gray-400"
           >
             Let's talk
           </button>
