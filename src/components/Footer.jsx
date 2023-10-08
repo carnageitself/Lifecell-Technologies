@@ -44,13 +44,13 @@ const Footer = () => {
               Products
             </span>
           </Link>
-          <Link to="/about">
+          <Link to="/aboutus">
             {" "}
             <span className="cursor-pointer hover:opacity-80 bg-[#202020] text-blue-300 px-3 py-2 rounded-2xl">
               About
             </span>
           </Link>
-          <Link to="/contact">
+          <Link to="/contactus">
             {" "}
             <span className="cursor-pointer hover:opacity-80 bg-[#202020] text-blue-300 px-3 py-2 rounded-2xl">
               Contact

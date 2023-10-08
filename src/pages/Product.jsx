@@ -1,8 +1,12 @@
 import React from 'react'
+import ProductList from '../components/ProductList'
+
 
 const Product = () => {
   return (
-    <div className='w-full h-screen bg-gray-100'>Product</div>
+    <div className='w-full h-screen bg-[#202020]'>
+     <ProductList/>
+    </div>
   )
 }
 

@@ -1,4 +1,5 @@
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import {MdOutlineLeaderboard} from "react-icons/md"
 
 const features = [
   {
@@ -23,7 +24,7 @@ const features = [
     name: 'Goal 4',
     description:
       'To be a Leader in Pyrogen free test-tube in India & International Market.',
-      icon: FingerPrintIcon,
+      icon: MdOutlineLeaderboard,
   },
 ]
 
