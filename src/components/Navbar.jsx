@@ -34,17 +34,17 @@ const Navbar = () => {
               className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
                 }`}
             >
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-base uppercase font-medium">
-                <li className=" hover:opacity-80 px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-base uppercase font-medium text-center">
+                <li className=" hover:opacity-80 px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl" onClick={navbar}>
                   <Link to="/">Home</Link>
                 </li>
-                <li className=" hover:opacity-80  px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl">
+                <li className=" hover:opacity-80  px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl" onClick={navbar}>
                   <Link to="/products">Products</Link>
                 </li>
-                <li className=" hover:opacity-80  px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl">
+                <li className=" hover:opacity-80  px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl" onClick={navbar}>
                   <Link to="/aboutus">About</Link>
                 </li>
-                <li className=" hover:opacity-80  px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl">
+                <li className=" hover:opacity-80  px-3 py-2 bg-[#202020] text-blue-300 rounded-2xl"onClick={navbar}>
                   <Link to="/contactus">Contact</Link>
                 </li>
               </ul>
