@@ -1,14 +1,16 @@
 import React from 'react'
 import Goals from '../components/Goals'
 import Partners from '../components/Partners'
-import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
-import AboutHero from '../components/AboutHero'
+import ProductProduction from '../components/ProductProduction'
+import Accreditation from '../components/Accreditations'
 
 const About = () => {
   return (
-    <div className='w-full h-full bg-[#202020]'>
-      <Team/>
+    <div className='w-full h-full bg-white'>
+      <ProductProduction/>
+      <Testimonials/>
+      <Accreditation/>
       <Goals/>
       <Partners/>
     </div>

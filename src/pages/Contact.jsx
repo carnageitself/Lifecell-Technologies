@@ -24,7 +24,7 @@ const Contact = () => {
         /> */}
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Contact Us</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl uppercase">Contact Us</h2>
         <p className="mt-2 text-lg leading-8 text-gray-800">
         We'd love to talk about any concern you have.
         </p>
@@ -137,6 +137,7 @@ const Contact = () => {
           <button
             type="submit"
             className="block w-full rounded-md bg-blue-500 px-3.5 py-2.5 text-center text-lg font-semibold text-gray-800 shadow-sm hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border border-gray-400"
+           
           >
             Let's talk
           </button>
