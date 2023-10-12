@@ -9,8 +9,8 @@ const Contact = () => {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className='w-full h-full bg-gray-100'>
-      <div className="bg-gray-100 px-6 py-28 sm:py-32 lg:px-8">
+    <div className='w-full h-full bg-gradient'>
+      <div className="bg-transparent px-6 py-28 sm:py-32 lg:px-8">
       <div
         className="absolute inset-x-0 top-[-20rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
         aria-hidden="true"
@@ -24,7 +24,7 @@ const Contact = () => {
         /> */}
       </div>
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl uppercase">Contact Us</h2>
+        <h2 className="text-3xl tracking-tight sm:text-4xl uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">Contact Us</h2>
         <p className="mt-2 text-lg leading-8 text-gray-800">
         We'd love to talk about any concern you have.
         </p>
@@ -136,7 +136,7 @@ const Contact = () => {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-blue-500 px-3.5 py-2.5 text-center text-lg font-semibold text-gray-800 shadow-sm hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border border-gray-400"
+            className="block w-full rounded-md bg-blue-500 px-3.5 py-2.5 text-center text-lg font-semibold text-gray-800 hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border border-gray-400 shadow-card"
            
           >
             Let's talk

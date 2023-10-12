@@ -48,13 +48,13 @@ export default function Partners() {
   return (
     <div className="bg-transparent py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-4xl font-bold leading-8 text-black uppercase">
+        <h2 className="text-center text-3xl leading-8 uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
           Current Client Base
         </h2>
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {client.map((client) => (
             <div key={client.id} className="group relative">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-black/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40 shadow-card">
                 <img
                   src={client.imageSrc}
                   alt={client.imageAlt}

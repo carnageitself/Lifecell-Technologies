@@ -7,7 +7,7 @@ import Accreditation from '../components/Accreditations'
 
 const About = () => {
   return (
-    <div className='w-full h-full bg-white'>
+    <div className='w-full h-full bg-gradient'>
       <ProductProduction/>
       <Testimonials/>
       <Accreditation/>

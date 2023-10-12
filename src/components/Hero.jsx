@@ -21,7 +21,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <Link to="/products">
-                <span className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-blue-300 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                <span className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-blue-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white shadow-card">
                   Get started
                 </span>
               </Link>
