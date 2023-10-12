@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "../assets/companylogo.png";
-import { TbPhone} from "react-icons/tb"
+import { TbPhone } from "react-icons/tb";
 import { BsYoutube } from "react-icons/bs";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
@@ -11,23 +11,22 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="relative bg-black min-h-[200px] text-blue-300 text-[15px] p-[20px] py-[50px] justify-between  m-auto flex flex-col md:flex-row items-center gap-[30px] md:items-start w-full border-t border-t-gray-900">
+    <div className="relative bg-black min-h-[200px] text-blue-300 text-[15px] p-[20px] py-[50px] justify-between  m-auto flex flex-col md:flex-row items-center gap-[30px] md:items-start w-full border-t border-t-gray-900 shadow-card">
       <div className=" flex flex-col items-center md:items-start gap-[5px]">
         <span className="logo">
           <img src={Img} className="w-36 h-12" alt="logo" />
         </span>
-
         <div className="flex gap-[10px] items-center text-[15px]">
-          <MdOutlineLocationOn  size={21}/>
+          <MdOutlineLocationOn size={21} />
           <span className="">Shendra, Aurangabad Head office-Mumbai</span>
         </div>
         <div className="flex gap-[10px] items-center text-[15px]">
-          <HiOutlineMail  size={21}/>
+          <HiOutlineMail size={21} />
           <span className="">sales@lifecelltechnologies.co.in</span>
         </div>
 
         <div className="flex gap-[10px] items-center text-[15px]">
-          <TbPhone  size={21}/>
+          <TbPhone size={21} />
           <span>+91 88288 25966</span>
         </div>
       </div>

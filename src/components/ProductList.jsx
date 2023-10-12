@@ -1,5 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
+import logo from "../assets/react.svg";
 
 /*
   This example requires some changes to your config:
@@ -18,51 +20,49 @@ import Modal from "./Modal";
 const products = [
   {
     id: 1,
-    name: 'Basic Tee',
-    href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+    name: "Pyrogen free test tube for bet",
+    link: "/",
+    imageSrc: logo,
     imageAlt: "Front of men's Basic Tee in black.",
-    price: '$35',
-    color: 'Black',
   },
+
   // More products...
-]
+];
 
 export default function ProductList() {
-
-const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-transparent">
       <div className="mx-auto max-w-2xl px-4 py-28 sm:px-6 sm:py-28 lg:max-w-7xl lg:px-8">
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900">Our Products</h2>
+        <h2 className="text-3xl text-center tracking-tight uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
+          Our Products
+        </h2>
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {products.map((product) => (
             <div key={product.id} className="group relative">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-black/10 lg:aspect-none group-hover:opacity-75 lg:h-80" onClick={""}>
-                <img
-                  src={product.imageSrc}
-                  alt={product.imageAlt}
-                  className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                />
-              </div>
-              <div className="mt-4 flex justify-between">
-                <div>
-                  <h3 className="text-sm text-gray-700">
-                    <a href={product.href}>
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {product.name}
-                    </a>
-                  </h3>
-                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+              <Link to={product.link}>
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 lg:aspect-none group-hover:opacity-75 lg:h-80 shadow-card">
+                  <img
+                    src={product.imageSrc}
+                    alt={product.imageAlt}
+                    className="h-full w-full object-contain p-2 object-center lg:h-full lg:w-full"
+                  />
                 </div>
-                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+              </Link>
+              <div className="mt-4 flex">
+                <div>
+                  <h3 className="text-blue-300 text-xl">
+                    <h1 className="absolute inset-o" />
+                    {product.name}
+                  </h3>
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }

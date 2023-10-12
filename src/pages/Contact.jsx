@@ -25,14 +25,14 @@ const Contact = () => {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl tracking-tight sm:text-4xl uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">Contact Us</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-800">
+        <p className="mt-2 text-lg leading-8 text-blue-300">
         We'd love to talk about any concern you have.
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-lg font-semibold leading-6 text-gray-800">
+            <label htmlFor="first-name" className="block text-lg font-semibold leading-6 text-blue-300">
               First name
             </label>
             <div className="mt-2.5">
@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-800">
+            <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-blue-300">
               Last name
             </label>
             <div className="mt-2.5">
@@ -61,7 +61,7 @@ const Contact = () => {
           </div>
         
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-lg font-semibold leading-6 text-gray-800">
+            <label htmlFor="email" className="block text-lg font-semibold leading-6 text-blue-300">
               Email
             </label>
             <div className="mt-2.5">
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="phone-number" className="block text-lg font-semibold leading-6 text-gray-800">
+            <label htmlFor="phone-number" className="block text-lg font-semibold leading-6 text-blue-300">
               Phone number
             </label>
             <div className="relative mt-2.5">
@@ -91,7 +91,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-lg font-semibold leading-6 text-gray-800">
+            <label htmlFor="message" className="block text-lg font-semibold leading-6 text-blue-300">
               Message
             </label>
             <div className="mt-2.5">
@@ -124,7 +124,7 @@ const Contact = () => {
                 />
               </Switch>
             </div>
-            <Switch.Label className="text-sm leading-6 text-gray-800">
+            <Switch.Label className="text-sm leading-6 text-white">
               By selecting this, you agree to our{' '}
               <a href="#" className="font-semibold text-blue-500 underline">
                 privacy&nbsp;policy

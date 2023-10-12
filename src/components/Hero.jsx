@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="bg-transparent">
       <div className="mx-auto max-w-full pt-20">
-        <div className="overflow-hidden hero shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 lg:h-[90vh] h-[50vh]">
+        <div className="overflow-hidden hero shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 lg:h-[90vh] h-[60vh]">
           <div className="mx-auto max-w-md lg:max-w-[50%] text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left mt-40 lg:mt-14">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
               Boost your productivity.

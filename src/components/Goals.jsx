@@ -43,7 +43,7 @@ export default function Goals() {
             {features.map((feature) => (
               <div key={feature.description} className="relative pl-16">
                 <dt className="font-semibold leading-7 text-blue-400 text-xl">
-                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-black">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-black border border-blue-400">
                     <feature.icon className="h-6 w-6 text-blue-300" aria-hidden="true" />
                   </div>
                   {feature.description}
