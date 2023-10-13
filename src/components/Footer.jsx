@@ -16,19 +16,19 @@ const Footer = () => {
         <span className="logo">
           <img src={Img} className="w-36 h-12" alt="logo" />
         </span>
-        <div className="flex gap-[10px] items-center text-[15px]">
+        <a href="https://www.google.com/maps/search/Shendra,+Aurangabad+Head+office-Mumbai/@19.8786019,75.3410362,12z/data=!3m1!4b1?entry=ttu" className="flex gap-[10px] items-center text-[15px]">
           <MdOutlineLocationOn size={21} />
-          <span className="">Shendra, Aurangabad Head office-Mumbai</span>
-        </div>
-        <div className="flex gap-[10px] items-center text-[15px]">
+          <span  className="">Shendra, Aurangabad Head office-Mumbai</span>
+        </a>
+        <a href="" className="flex gap-[10px] items-center text-[15px]">
           <HiOutlineMail size={21} />
           <span className="">sales@lifecelltechnologies.co.in</span>
-        </div>
+        </a>
 
-        <div className="flex gap-[10px] items-center text-[15px]">
+        <a href="https://wa.me/+918828825966" className="flex gap-[10px] items-center text-[15px]">
           <TbPhone size={21} />
           <span>+91 88288 25966</span>
-        </div>
+        </a>
       </div>
       <div className="flex items-center md:items-end flex-col gap-[25px]">
         <div className="flex gap-[25px]">
