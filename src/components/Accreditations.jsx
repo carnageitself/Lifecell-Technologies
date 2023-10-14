@@ -1,22 +1,22 @@
-import cipla from "../assets/cipla.png";
-import fdc from "../assets/fdc.png";
-import lupin from "../assets/lupin.png";
+import iaf from "../assets/iaf.png";
+import iso from "../assets/iso.png";
+import gmp from "../assets/gmp.png";
 
 export default function Accreditation() {
   const client = [
     {
       id: 1,
-      imageSrc: lupin,
+      imageSrc: iso,
       imageAlt: "Front of men's Basic Tee in black.",
     },
     {
       id: 2,
-      imageSrc: cipla,
+      imageSrc: iaf,
       imageAlt: "Front of men's Basic Tee in black.",
     },
     {
       id: 3,
-      imageSrc: fdc,
+      imageSrc: gmp,
       imageAlt: "Front of men's Basic Tee in black.",
     },
   ];

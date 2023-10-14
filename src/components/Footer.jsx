@@ -20,7 +20,7 @@ const Footer = () => {
           <MdOutlineLocationOn size={21} />
           <span  className="">Shendra, Aurangabad Head office-Mumbai</span>
         </a>
-        <a href="" className="flex gap-[10px] items-center text-[15px]">
+        <a href="mailto:sales@lifecelltechnologies.co.in" className="flex gap-[10px] items-center text-[15px]">
           <HiOutlineMail size={21} />
           <span className="">sales@lifecelltechnologies.co.in</span>
         </a>
@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="flex gap-[25px]">
           <Link to="/">
             <span className="cursor-pointer hover:opacity-80 bg-[#202020] text-blue-300 px-3 py-2 rounded-2xl">
-              Partners
+              Home
             </span>
           </Link>
           <Link to="/products">

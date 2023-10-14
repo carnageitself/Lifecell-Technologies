@@ -1,25 +1,21 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
 import logo from "../assets/company2.jpeg";
+import {AiOutlineCheckCircle} from "react-icons/ai"
 
 const features = [
   {
     description:
       "Pioneering India's first Pyrogen free production plant. Notably, it boasts the distinction of being the site of India's pioneering Pyrogen-free production plant. This achievement underscores a commitment to producing goods of exceptional quality, particularly in industries where the absence of pyrogens is crucial.",
-    icon: CloudArrowUpIcon,
+    icon: AiOutlineCheckCircle,
   },
   {
     description:
       "Well connected through Highways, Airport, Railway station. What sets this location apart is its exceptional connectivity. It is seamlessly integrated into the region's transportation network, with well-developed highways providing smooth access. Furthermore, an airport and a railway station are conveniently located, facilitating both national and international logistics. This accessibility is a key factor for businesses operating in this area.",
-    icon: LockClosedIcon,
+    icon: AiOutlineCheckCircle,
   },
   {
     description:
       "Surrounded by the Big Pharma Companies. This proximity to industry leaders fosters an environment of innovation and collaboration, with opportunities for knowledge exchange and potential partnerships. This close-knit ecosystem of pharmaceutical companies creates a dynamic and competitive environment, further driving excellence and progress.",
-    icon: ServerIcon,
+    icon: AiOutlineCheckCircle,
   },
 ];
 

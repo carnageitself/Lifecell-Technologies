@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { Switch } from "@headlessui/react";
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
+import logo from "../assets/react.svg"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -83,112 +84,49 @@ const Contact = () => {
             We'd love to talk about any concern you have.
           </p>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="mx-auto mt-16 max-w-xl sm:mt-20"
-          ref={formRef}
-          onSubmit={handleSubmit}
-        >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div>
-              <label
-                htmlFor="first-name"
-                className="block text-lg font-semibold leading-6 text-blue-300"
-              >
-                First name
-              </label>
-              <div className="mt-2.5">
+        <div className="container flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
+          <div className="flex-[0.75] bg-transparent p-8 rounded-2xl">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="mt-12 flex flex-col gap-8"
+            >
+              <label className="flex flex-col">
+                <span className="text-blue-300 font-medium mb-4">Your Name</span>
                 <input
                   type="text"
-                  name="first-name"
-                  id="first-name"
-                  autoComplete="given-name"
+                  name="name"
                   value={form.name}
                   onChange={handleChange}
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:ring-inset sm:text-sm sm:leading-6 bg-transparent"
+                  placeholder="What's your good name?"
+                  className="bg-gradient py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium"
                 />
-              </div>
-            </div>
-            <div>
-              <label
-                htmlFor="last-name"
-                className="block text-lg font-semibold leading-6 text-blue-300"
-              >
-                Last name
               </label>
-              <div className="mt-2.5">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  value={form.name}
-                  onChange={handleChange}
-                  autoComplete="family-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:ring-inset sm:text-sm sm:leading-6 bg-transparent"
-                />
-              </div>
-            </div>
-
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="email"
-                className="block text-lg font-semibold leading-6 text-blue-300"
-              >
-                Email
-              </label>
-              <div className="mt-2.5">
+              <label className="flex flex-col">
+                <span className="text-blue-300 font-medium mb-4">Your email</span>
                 <input
                   type="email"
                   name="email"
-                  id="email"
-                  autoComplete="email"
                   value={form.email}
-              onChange={handleChange}
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:ring-inset sm:text-sm sm:leading-6 bg-transparent"
-                />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="phone-number"
-                className="block text-lg font-semibold leading-6 text-blue-300"
-              >
-                Phone number
-              </label>
-              <div className="relative mt-2.5">
-                <div className="absolute inset-y-0 left-0 flex items-center"></div>
-                <input
-                  type="tel"
-                  name="phone-number"
-                  id="phone-number"
-                  value={form.message}
                   onChange={handleChange}
-                  autoComplete="tel"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:ring-inset sm:text-sm sm:leading-6 resize-none bg-transparent"
+                  placeholder="What's your web address?"
+                  className="bg-gradient py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium"
                 />
-              </div>
-            </div>
-            <div className="sm:col-span-2">
-              <label
-                htmlFor="message"
-                className="block text-lg font-semibold leading-6 text-blue-300"
-              >
-                Message
               </label>
-              <div className="mt-2.5">
+              <label className="flex flex-col">
+                <span className="text-blue-300 font-medium mb-4">
+                  Your Message
+                </span>
                 <textarea
+                  rows={7}
                   name="message"
-                  id="message"
-                  rows={4}
                   value={form.message}
                   onChange={handleChange}
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-0 focus:ring-inset sm:text-sm sm:leading-6 resize-none bg-transparent"
-                  defaultValue={""}
+                  placeholder="What you want to say?"
+                  className="bg-gradient py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium resize-none"
                 />
-              </div>
-            </div>
-            <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+              </label>
+              <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Switch
                   checked={agreed}
@@ -216,16 +154,20 @@ const Contact = () => {
                 .
               </Switch.Label>
             </Switch.Group>
+              <button
+                type="submit"
+                className="bg-gradient py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+                disabled={!agreed}
+              >
+                {loading ? "Sending..." : "Send"}
+              </button>
+            </form>
           </div>
-          <div className="mt-10">
-            <button
-              type="submit"
-              className="block w-full rounded-md bg-blue-500 px-3.5 py-2.5 text-center text-lg font-semibold text-gray-800 hover:bg-transparent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 border border-gray-400 shadow-card"
-            >
-              {loading ? "Sending..." : "Send"}
-            </button>
+
+          <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
+            <img src={logo} alt="" className="w-full h-full p-10 object-contain"/>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

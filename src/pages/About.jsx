@@ -12,10 +12,10 @@ const About = () => {
     <div className='w-full h-full bg-gradient'>
       <AboutHero/>
       <Accreditation/>
+      <Certificates/>
       <ProductProduction/>
       <Goals/>
       <Partners/>
-      <Certificates/>
       <Testimonials/>
     </div>
   )

@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Modal from "./Modal";
 import { Link } from "react-router-dom";
-import logo from "../assets/react.svg";
+import logo from "../assets/product.png";
 
 const products = [
   {
     id: 1,
     name: "Pyrogen free test tube for bet",
-    link: "/",
+    link: "/products/product",
     imageSrc: logo,
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Test tubes",
   },
 
   // More products...
