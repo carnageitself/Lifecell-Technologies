@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-full bg-gradient px-6 py-28">
+    <div className="w-full h-full bg-gradient lg:px-6 py-28">
       <div className="bg-transparent">
         <div
           className="absolute inset-x-0 top-[-20rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -118,7 +118,7 @@ const Contact = () => {
                   Your Message
                 </span>
                 <textarea
-                  rows={5}
+                  rows={3}
                   name="message"
                   value={form.message}
                   onChange={handleChange}
