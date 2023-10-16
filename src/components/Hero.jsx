@@ -12,7 +12,7 @@ export default function Hero() {
               <br />
               Start using our app today.
             </h2>
-            <p className="mt-6 text-sm leading-8 flex flex-col items-start text-gray-300 sm:text-lg">
+            <p className="mt-6 text-sm leading-8 flex flex-col items-start text-left ml-5 text-gray-300 sm:text-lg">
               <li>
                 Located in major production center of Maharashtra(Aurangabad).
               </li>
