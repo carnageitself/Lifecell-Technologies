@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
 
@@ -33,8 +33,8 @@ function App() {
           element: <Products />,
         },
         {
-          path: "/products/product",
-          element: <Product />,
+          path: "/products/productdetails",
+          element: <ProductDetails />,
         },
         {
           path: "/aboutus",

@@ -85,7 +85,7 @@ const Slider = () => {
 
 
   return (
-    <div className="bg-transparent content-center p-10 mx-24">
+    <div className="bg-transparent content-center p-10 lg:mx-24">
         <Carousel autoPlay={true} infiniteLoop={true} showIndicators={true} showStatus={false} stopOnHover={true} useKeyboardArrows={true}>
         <div>
           <Test1 />

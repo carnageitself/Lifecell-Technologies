@@ -62,8 +62,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-full bg-gradient">
-      <div className="bg-transparent px-6 py-28 sm:py-32 lg:px-8">
+    <div className="w-full h-full bg-gradient px-6 py-28">
+      <div className="bg-transparent">
         <div
           className="absolute inset-x-0 top-[-20rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
           aria-hidden="true"
@@ -89,7 +89,7 @@ const Contact = () => {
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="mt-12 flex flex-col gap-8"
+              className="mt-12 flex flex-col gap-8 border border-white/5 p-5 rounded-xl shadow-card"
             >
               <label className="flex flex-col">
                 <span className="text-blue-300 font-medium mb-4">Your Name</span>
@@ -118,7 +118,7 @@ const Contact = () => {
                   Your Message
                 </span>
                 <textarea
-                  rows={7}
+                  rows={5}
                   name="message"
                   value={form.message}
                   onChange={handleChange}

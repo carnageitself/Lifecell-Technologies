@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     name: "Pyrogen free test tube for bet",
-    link: "/products/product",
+    link: "/products/productdetails",
     imageSrc: logo,
     imageAlt: "Test tubes",
   },

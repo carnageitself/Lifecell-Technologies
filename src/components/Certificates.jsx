@@ -21,10 +21,10 @@ const Certificates = () => {
   return (
    <div className="certificates bg-transparent flex flex-col items-center">
     <h1 className='text-center text-3xl leading-8 uppercase bg-gradient-to-r  from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black'>Certifications</h1>
-    <div className="mt-10 h-full grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+    <div className="mt-10 h-full grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8 p-10">
           {client.map((client) => (
             <div key={client.id} className="group relative">
-              <div className="aspect-h-2 aspect-w-2 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40 shadow-card">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-96 shadow-card">
                 <img
                   src={client.imageSrc}
                   alt={client.imageAlt}
