@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { Switch } from "@headlessui/react";
 import emailjs from "@emailjs/browser";
-import logo from "../assets/react.svg"
+import logo from "../assets/contact.svg"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
