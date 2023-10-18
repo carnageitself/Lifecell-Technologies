@@ -7,12 +7,12 @@ import logo3 from "../assets/product3.png";
 
 const ProductDetails = () => {
   return (
-    <div className="w-full h-full bg-gray-300 py-24 sm:py-32">
+    <div className="w-full h-full bg-gradient py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-3xl leading-8 uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
           Product Details
         </h2>
-        <div className="bg-gray-200 content-center p-10 lg:mx-24 shadow-card rounded-xl mt-10">
+        <div className="bg-gradient content-center p-10 lg:mx-24 shadow-card rounded-xl mt-10">
           <Carousel
             autoPlay={true}
             infiniteLoop={true}
@@ -50,10 +50,10 @@ const ProductDetails = () => {
             </div>
           </Carousel>
           <div className="flex flex-col gap-2 items-center justify-center">
-            <p className="text-center mt-2tracking-tight sm:text-xl text-xl leading-8 uppercase bg-transparent text-black mb-2">
+            <p className="text-center mt-2tracking-tight sm:text-xl text-xl leading-8 uppercase bg-transparent text-blue-300 font-semibold mb-2">
               Sizes Available
             </p>
-            <p className="text-center mt-2tracking-tight sm:text-xl text-sm leading-8 bg-transparent text-black flex flex-col jusity-center items-start">
+            <p className="text-center mt-2tracking-tight sm:text-xl text-sm leading-8 bg-transparent text-blue-300 flex flex-col jusity-center items-start">
               <div className="flex text-left gap-6">
                 <div className="span">LF1075B{""}{""}{""}</div>
                 <div className="span">

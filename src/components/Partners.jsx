@@ -54,7 +54,7 @@ export default function Partners() {
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 p-10">
           {client.map((client) => (
             <div key={client.id} className="group relative">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40 shadow-lg border shadow-blue-200">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40 shadow-card">
                 <img
                   src={client.imageSrc}
                   alt={client.imageAlt}

@@ -24,7 +24,7 @@ const Certificates = () => {
     <div className="mt-10 h-full grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-8 p-10">
           {client.map((client) => (
             <div key={client.id} className="group relative">
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-96 shadow-lg border shadow-blue-100">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-96 shadow-card">
                 <img
                   src={client.imageSrc}
                   alt={client.imageAlt}

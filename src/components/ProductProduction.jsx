@@ -49,8 +49,8 @@ const ProductProduction = () => {
           {client.map((client) => (
             
             <div key={client.id} className="group relative">
-              <h1  className='text-base text-center mb-5'>{client.desc}</h1>
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40 shadow-lg border shadow-purple-300">
+              <h1  className='text-base text-center mb-5 text-blue-300'>{client.desc}</h1>
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 p-5 lg:aspect-none group-hover:opacity-75 lg:h-40 shadow-card">
                 
                 <img
                   src={client.imageSrc}

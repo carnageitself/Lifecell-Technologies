@@ -29,7 +29,7 @@ export default function ProductList() {
           {products.map((product) => (
             <div key={product.id} className="group relative">
               <Link to={product.link}>
-                <div className="productcard aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white lg:aspect-none group-hover:opacity-75 lg:h-80 shadow-sm shadow-">
+                <div className="productcard aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 lg:h-80 shadow-card">
                   <img
                     src={product.imageSrc}
                     alt={product.imageAlt}
@@ -39,7 +39,7 @@ export default function ProductList() {
               </Link>
               <div className="mt-4 flex">
                 <div>
-                  <h3 className="text-black text-xl">
+                  <h3 className="text-blue-300 text-xl">
                     <h1 className="absolute inset-o" />
                     {product.name}
                   </h3>

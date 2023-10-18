@@ -8,7 +8,7 @@ import AboutHero from '../components/AboutHero'
 
 const About = () => {
   return (
-    <div className='w-full h-full bg-gray-300'>
+    <div className='w-full h-full bg-gradient'>
       <AboutHero/>
       <Accreditation/>
       <Certificates/>

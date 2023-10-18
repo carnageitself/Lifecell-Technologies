@@ -5,7 +5,7 @@ import ProductProduction from '../components/ProductProduction'
 
 const Products = () => {
   return (
-    <div className='w-full h-full bg-gray-300'>
+    <div className='w-full h-full bg-gradient'>
       <ProductProduction/>
      <ProductList/>
     </div>
