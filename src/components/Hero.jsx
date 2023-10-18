@@ -8,11 +8,11 @@ export default function Hero() {
         <div className="overflow-hidden hero shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 lg:h-[90vh] h-[60vh]">
           <div className="mx-auto max-w-md md:max-w-[100%] lg:max-w-[100%] text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left mt-28 md:mt-5 lg:mt-14">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Boost your productivity.
+              Empowering Communities with
               <br />
-              Start using our app today.
+              Accessible Healthcare.
             </h2>
-            <p className="mt-6 text-sm leading-8 flex flex-col items-start text-left ml-5 text-gray-300 sm:text-lg">
+            <p className="mt-6 text-sm leading-8 flex flex-col items-start text-left ml-5 text-gray-100 sm:text-lg">
               <li>
                 Located in major production center of Maharashtra(Aurangabad).
               </li>
@@ -21,7 +21,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <Link to="/products">
-                <span className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-blue-300 hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white shadow-card">
+                <span className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white shadow-card">
                   Get started
                 </span>
               </Link>

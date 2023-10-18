@@ -1,4 +1,4 @@
-import logo from "../assets/company2.jpeg";
+import logo from "../assets/company4.jpeg";
 import {AiOutlineCheckCircle} from "react-icons/ai"
 
 const features = [
@@ -37,12 +37,12 @@ export default function AboutHero() {
                 compelling choice for businesses looking to thrive in this
                 dynamic economic landscape.
               </p> */}
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-blue-300 lg:max-w-none">
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-black lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
                     <dt className="inline font-semibold text-blue-300">
                       <feature.icon
-                        className="absolute left-1 top-1 h-5 w-5 text-blue-300 "
+                        className="absolute left-1 top-1 h-5 w-5 text-black "
                         aria-hidden="true"
                       />
                       {feature.name}
@@ -56,7 +56,7 @@ export default function AboutHero() {
           <img
             src={logo}
             alt="Product screenshot"
-            className="w-[48rem] max-w-none rounded-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover mt-10 shadow-card"
+            className="w-[48rem] max-w-none rounded-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 object-cover mt-10"
             width={2432}
             height={1442}
           />

@@ -11,7 +11,7 @@ const Slider = () => {
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         {/* <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" /> */}
         <figure className="mt-10">
-          <blockquote className="text-center text-xl font-semibold leading-8 text-blue-300 sm:text-2xl sm:leading-9">
+          <blockquote className="text-center text-xl font-semibold leading-8 text-blue-600 sm:text-2xl sm:leading-9">
             <p>
               “Very good Quality, Performance, Reliability, Service and more.”
             </p>
@@ -37,7 +37,7 @@ const Slider = () => {
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         {/* <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" /> */}
         <figure className="mt-10">
-          <blockquote className="text-center text-xl font-semibold leading-8 text-blue-300 sm:text-2xl sm:leading-9">
+          <blockquote className="text-center text-xl font-semibold leading-8 text-blue-600 sm:text-2xl sm:leading-9">
             <p>
               “Management is very good and growing company at international level as already in domestic.”
             </p>
@@ -63,7 +63,7 @@ const Slider = () => {
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         {/* <img className="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="" /> */}
         <figure className="mt-10">
-          <blockquote className="text-center text-xl font-semibold leading-8 text-blue-300 sm:text-2xl sm:leading-9">
+          <blockquote className="text-center text-xl font-semibold leading-8 text-blue-600 sm:text-2xl sm:leading-9">
             <p>
               “We promise for Quality, Sureity, and Purity.”
             </p>

@@ -62,7 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full h-full bg-gradient lg:px-6 py-28">
+    <div className="w-full h-full bg-gray-300 lg:px-6 py-24 contact">
       <div className="bg-transparent">
         <div
           className="absolute inset-x-0 top-[-20rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -76,45 +76,45 @@ const Contact = () => {
           }}
         /> */}
         </div>
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl tracking-tight sm:text-4xl uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
+        <div className="mx-auto max-w-2xl text-center top-0">
+          {/* <h2 className="text-3xl tracking-tight sm:text-4xl uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
             Contact Us
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-blue-300">
-            We'd love to talk about any concern you have.
+          </h2> */}
+          <p className="mt-2 text-2xl font-bold leading-8 text-blue-500 bg-white/80 shadow-card p-5 rounded-xl">
+            "We'd love to talk about any concern you have."
           </p>
         </div>
         <div className="container flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
-          <div className="flex-[0.75] bg-transparent p-8 rounded-2xl">
+          <div className="flex-1 bg-transparent p-8 rounded-2xl">
             <form
               ref={formRef}
               onSubmit={handleSubmit}
               className="mt-12 flex flex-col gap-8 border border-white/5 p-5 rounded-xl shadow-card"
             >
               <label className="flex flex-col">
-                <span className="text-blue-300 font-medium mb-4">Your Name</span>
+                <span className="text-black font-medium mb-4">Your Name</span>
                 <input
                   type="text"
                   name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your good name?"
-                  className="bg-gradient py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium"
+                  className="bg-black/60 py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-blue-300 font-medium mb-4">Your email</span>
+                <span className="text-black font-medium mb-4">Your email</span>
                 <input
                   type="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
-                  placeholder="What's your web address?"
-                  className="bg-gradient py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium"
+                  placeholder="Where can we ping you?"
+                  className="bg-black/60 py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium"
                 />
               </label>
               <label className="flex flex-col">
-                <span className="text-blue-300 font-medium mb-4">
+                <span className="text-black font-medium mb-4">
                   Your Message
                 </span>
                 <textarea
@@ -122,8 +122,8 @@ const Contact = () => {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="What you want to say?"
-                  className="bg-gradient py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium resize-none"
+                  placeholder="What do you have to say?"
+                  className="bg-black/60 py-4 px-6 placeholder:text-blue-100 text-white rounded-lg outline-none border-none font-medium resize-none"
                 />
               </label>
               <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
@@ -162,10 +162,6 @@ const Contact = () => {
                 {loading ? "Sending..." : "Send"}
               </button>
             </form>
-          </div>
-
-          <div className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-            <img src={logo} alt="" className="w-full h-full p-10 object-contain"/>
           </div>
         </div>
       </div>

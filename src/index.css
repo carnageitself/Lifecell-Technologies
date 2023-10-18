@@ -10,7 +10,7 @@
 }
 
 .hero {
-  background-image: url("../src/assets/company.jpeg");
+  background-image: url("../src/assets/bg-garden.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -41,4 +41,11 @@
     #131313,
     #000000
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contact {
+  background-image: url("../src/assets/contactpage.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

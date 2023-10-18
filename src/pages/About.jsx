@@ -2,18 +2,16 @@ import React from 'react'
 import Goals from '../components/Goals'
 import Partners from '../components/Partners'
 import Testimonials from '../components/Testimonials'
-import ProductProduction from '../components/ProductProduction'
 import Accreditation from '../components/Accreditations'
 import Certificates from '../components/Certificates'
 import AboutHero from '../components/AboutHero'
 
 const About = () => {
   return (
-    <div className='w-full h-full bg-gradient'>
+    <div className='w-full h-full bg-gray-300'>
       <AboutHero/>
       <Accreditation/>
       <Certificates/>
-      <ProductProduction/>
       <Goals/>
       <Partners/>
       <Testimonials/>
