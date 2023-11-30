@@ -1,113 +1,22 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import logo from "../assets/product.png";
-import logo2 from "../assets/product2.png";
-import logo3 from "../assets/product3.png";
+import React from 'react'
+import arrows from "../assets/arrows.png"
+import arrows2 from "../assets/arrows2.png"
 
 const ProductDetails = () => {
   return (
-    <div className="w-full h-full bg-gradient py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-3xl leading-8 uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
-          Product Details
-        </h2>
-        <div className="bg-gradient content-center p-10 lg:mx-24 shadow-card rounded-xl mt-10">
-          <Carousel
-            autoPlay={true}
-            infiniteLoop={true}
-            showIndicators={true}
-            showStatus={false}
-            stopOnHover={true}
-            useKeyboardArrows={true}
-          >
-            <div>
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  src={logo}
-                  alt="logo"
-                  className="h-full w-full object-contain p-2 object-center lg:h-full lg:w-full"
-                />
-              </div>
-            </div>
-            <div>
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  src={logo2}
-                  alt="logo"
-                  className="h-full w-full object-contain p-2 object-center lg:h-full lg:w-full"
-                />
-              </div>
-            </div>
-            <div>
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white/5 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                <img
-                  src={logo3}
-                  alt="logo"
-                  className="h-full w-full object-contain p-2 object-center lg:h-full lg:w-full"
-                />
-              </div>
-            </div>
-          </Carousel>
-          <div className="flex flex-col gap-2 items-center justify-center">
-            <p className="text-center mt-2tracking-tight sm:text-xl text-xl leading-8 uppercase bg-transparent text-blue-300 font-semibold mb-2">
-              Sizes Available
-            </p>
-            <p className="text-center mt-2tracking-tight sm:text-xl text-sm leading-8 bg-transparent text-blue-300 flex flex-col jusity-center items-start">
-              <div className="flex text-left gap-6">
-                <div className="span">LF1075B{""}{""}{""}</div>
-                <div className="span">
-                  10X75mm Pyrogen Free Sodalime Assay Tubes
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF1075S{""}{""}{""}</div>
-                <div className="span">
-                  10X75mm Pyrogen Free Borosilicate Assay Tubes
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF1275B{""}{""}{""}</div>
-                <div className="span">
-                  12X75mm Pyrogen Free Borosilicate Dilution Tube
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF13100B</div>
-                <div className="span">
-                  13X100mm Pyrogen Free Borosilicate Dilution Tube
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF16100B</div>
-                <div className="span">
-                  16X100mm Pyrogen Free Borosilicate Dilution Tube
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF16125B</div>
-                <div className="span">
-                  16X125mm Pyrogen Free Borosilicate Dilution Tube
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF18150B</div>
-                <div className="span">
-                  18X150mm Pyrogen Free Borosilicate Dilution Tube
-                </div>
-              </div>
-              <div className="flex text-left gap-5">
-                <div className="span">LF28200B</div>
-                <div className="span">
-                  28X200mm Pyrogen Free Borosilicate Dilution Tube
-                </div>
-              </div>
-            </p>
-          </div>
+    <div className='h-screen w-full'>
+        <div className="flex items-center flex-col justify-center text-center py-20 bg-gradient-to-b from-gray-900 to-indigo-900 relative">
+         <img src={arrows} alt="" className="absolute top-0 right-2 object-contain"/>
+         <img src={arrows2} alt="" className="absolute bottom-0 left-2 object-contain"/>
+          <h2 className="text-3xl tracking-tight sm:text-4xl uppercase bg-gradient-to-r from-cyan-300 to-blue-600  text-transparent bg-clip-text font-black">
+            Product Details
+          </h2>
+          <p className="mt-2 text-lg leading-8 text-blue-300">
+          "Elevating Health, Empowering Lives: Our Commitment to a Better Tomorrow."
+          </p>
         </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductDetails;
+export default ProductDetails

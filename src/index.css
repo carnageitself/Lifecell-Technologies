@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +12,7 @@
 }
 
 .hero {
-  background-image: url("../src/assets/bg-garden.jpeg");
+  background-image: url("../src/assets/company.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -46,6 +48,40 @@
 .contact {
   background-image: url("../src/assets/contactpage.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+}
+
+.hometag:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.producttag:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.contacttag:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.abouttag:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.slider {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border: 2px solid white;
+  z-index: 20;
+}
+
+.font-title {
+  font-family: 'Fraunces', serif;
+}
+
+.slide {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.sliderimg {
+  z-index: 10;
 }

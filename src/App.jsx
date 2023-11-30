@@ -33,7 +33,7 @@ function App() {
           element: <Products />,
         },
         {
-          path: "/products/productdetails",
+          path: "productdetails",
           element: <ProductDetails />,
         },
         {

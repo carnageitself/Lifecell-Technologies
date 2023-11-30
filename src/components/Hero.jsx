@@ -1,48 +1,74 @@
-import logo from "../assets/companylogo.png";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Autoplay,
+  EffectFade,
+  EffectCards,
+  Pagination,
+  Navigation,
+} from "swiper/modules";
+import company from "../assets/company.jpeg"
 
-export default function Hero() {
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+const Hero = () => {
   return (
-    <div className="bg-transparent">
-      <div className="mx-auto max-w-full pt-20">
-        <div className="overflow-hidden hero shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0 lg:h-[90vh] h-[60vh]">
-          <div className="mx-auto max-w-md md:max-w-[100%] lg:max-w-[100%] text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left mt-28 md:mt-5 lg:mt-14">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Empowering Communities with
+    <div className="w-full h-full">
+      <div className="container w-full sm:h-screen hero flex xl:flex-row flex-col-reverse overflow-hidden relative">
+        <div className="absolute bg-black opacity-60 inset-0"></div>
+        <div className="flex-1 relative">
+          <div className="absolute w-[70%] bg-blue-600 h-[100vh] right-0"></div>
+          <div className="slider absolute z-20 top-64 w-[500px] h-72 rounded-xl left-28">
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              modules={[Autoplay, EffectFade, EffectCards, Pagination]}
+              autoplay={{ delay: 2000 }}
+              fadeEffect={true}
+              cardsEffect={true}
+              pagination={{ clickable: true }}
+            >
+              <SwiperSlide>
+                  <img  src={company} alt="" className="sliderimg object-cover w-[500px] rounded-xl h-[285px]"/>
+              </SwiperSlide>
+              <SwiperSlide>
+                  <img  src={company} alt="" className="sliderimg object-cover w-[500px] rounded-xl h-[285px]"/>
+              </SwiperSlide> <SwiperSlide>
+                  <img  src={company} alt="" className="sliderimg object-cover w-[500px] rounded-xl h-[285px]"/>
+              </SwiperSlide> <SwiperSlide>
+                  <img  src={company} alt="" className="sliderimg object-cover w-[500px] rounded-xl h-[285px]"/>
+              </SwiperSlide> <SwiperSlide>
+                  <img  src={company} alt="" className="sliderimg object-cover w-[500px] rounded-xl h-[285px]"/>
+              </SwiperSlide> <SwiperSlide>
+                  <img  src={company} alt="" className="sliderimg object-cover w-[500px] rounded-xl h-[285px]"/>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+        <div className="flex-[1.25] relative">
+          <div className="absolute mx-auto max-w-md md:max-w-[100%] lg:max-w-[100%] text-center lg:mx-0 lg:flex-auto lg:py-40 lg:text-left mt-28 md:mt-5 lg:mt-14">
+            <h2 className="text-2xl font-bold tracking-tight text-white sm:text-6xl px-10">
+              Empowering Communities 
               <br />
-              Accessible Healthcare.
+             with Accessible Healthcare!
             </h2>
-            <p className="mt-6 text-sm leading-8 flex flex-col items-start text-left ml-5 text-gray-100 sm:text-lg">
+            <p className="mt-6 text-lg leading-8 flex flex-col items-start text-left px-10 text-gray-100 sm:text-lg gap-3">
               <li>
                 Located in major production center of Maharashtra(Aurangabad).
               </li>
               <li>Well connected through Highways,Airport,Railway station.</li>
               <li>Surrounded by the Big Pharma Companies.</li>
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-              <Link to="/products">
-                <span className="rounded-md bg-black px-3.5 py-2.5 text-sm font-semibold text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white shadow-card">
-                  Get started
-                </span>
-              </Link>
-              <Link to="/aboutus">
-                <span className="text-sm font-semibold leading-6 text-white rounded-md bg-black/10 ring-1 ring-black/10 px-3.5 py-2.5">
-                  Learn more <span aria-hidden="true">→</span>
-                </span>
-              </Link>
-            </div>
-          </div>
-          <div className="relative mt-16  lg:mt-28">
-            <img
-              className="absolute hidden left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-              src={logo}
-              alt="App screenshot"
-              width={1824}
-              height={1080}
-            />
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Hero;
