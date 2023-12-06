@@ -17,6 +17,7 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@mui/material": "^5.14.12",
+    "@mui/x-data-grid": "^6.18.3",
     "hamburger-react": "^2.5.0",
     "mdb-react-ui-kit": "^6.3.0",
     "react": "^18.2.0",

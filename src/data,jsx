@@ -1,0 +1,47 @@
+export const columns = [
+  { field: "id", headerName: "ID", width: 200 },
+  { field: "size", headerName: "Sizes Available", width: 400 },
+  { field: "name", headerName: "Product Name", width: 600 },
+];
+
+export const rows = [
+  { id: 1, size: "LF1075B", name: "10X75mm Pyrogen Free Sodalime Assay Tubes" },
+  {
+    id: 2,
+    size: "LF1075S",
+    name: "10X75mm Pyrogen Free Borosilicate Assay Tubes",
+  },
+  {
+    id: 3,
+    size: "LF1275B",
+    name: "12X75mm Pyrogen Free Borosilicate Dilution Tube",
+  },
+  {
+    id: 4,
+    size: "LF13100B",
+    name: "13X100mm Pyrogen Free Borosilicate Dilution Tube",
+  },
+  {
+    id: 5,
+    size: "LF16100B",
+    name: "16X100mm Pyrogen Free Borosilicate Dilution Tube",
+  },
+  {
+    id: 6,
+    size: "LF16125B",
+    name: "16X125mm Pyrogen Free Borosilicate Dilution Tube",
+  },
+  {
+    id: 7,
+    size: "LF18150B",
+    name: "18X150mm Pyrogen Free Borosilicate Dilution Tube ",
+  },
+  {
+    id: 8,
+    size: "LF28200B",
+    name: "28X200mm Pyrogen Free Borosilicate Dilution Tube",
+  },
+];
+
+export const title = "Pyrogen free testtube for bet"
+export const description = "Pyrogens are substances that can cause fever when introduced into the body. In a laboratory setting, especially in fields like pharmaceuticals or biotechnology, it's crucial to use pyrogen-free equipment to prevent contamination. Pyrogen-free test tubes are designed and treated to ensure the absence of pyrogens, ensuring the accuracy and safety of experiments, particularly those involving biological samples or pharmaceuticals."
